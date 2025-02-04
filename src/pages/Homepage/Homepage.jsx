@@ -4,16 +4,18 @@ import HeroSection from "./HeroSection";
 import FeatureSection from "./FeatureSection";
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
+import Whatsapppop from "../../components/Popup/Whatsapppop";
 
 function Homepage() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="  bg-red-300"></div>
       <HeroSection />
       <FeatureSection />
       <Testimonials />
-      <Footer />
+
+      {/* <Footer /> */}
     </div>
   );
 }
