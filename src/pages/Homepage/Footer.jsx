@@ -55,13 +55,19 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-bold mb-4">USEFUL LINKS</h3>
           <ul className="text-sm space-y-2">
-            {["About", "FAQ", "Career", "Our Team", "Services", "Gallery"].map(
-              (link) => (
-                <li key={link} className="hover:text-yellow-500">
-                  &gt; {link}
-                </li>
-              )
-            )}
+            {[
+              "Home",
+              "About",
+              "Product",
+              "Project",
+              "Gallery",
+              "Blog",
+              "Contact Us",
+            ].map((link) => (
+              <li key={link} className="hover:text-yellow-500">
+                &gt; {link}
+              </li>
+            ))}
           </ul>
         </div>
 
