@@ -14,7 +14,7 @@ function Layout() {
       <Navbar />
       <div className="relative ">
         <Outlet />
-        <div className="fixed z-50 bottom-8 right-0 ">
+        <div className="fixed z-50 bottom-8 right-0">
           <Whatsapppop />
         </div>
       </div>

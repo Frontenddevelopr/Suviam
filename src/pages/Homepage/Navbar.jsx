@@ -26,7 +26,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-gray-300 px-4 md:px-10 py-3 flex justify-between items-center">
+      <nav className="bg-[#fff]  text-blue-700 text-md  shadow-xl px-4 md:px-10 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="bg-blue-900 p-2 rounded-full">
@@ -39,21 +39,56 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex space-x-8 text-black font-semibold">
-          <button onClick={() => navigate("/")}>HOME</button>
-          <button onClick={() => navigate("/aboutus")}>ABOUT</button>
-          <button onClick={() => navigate("/product")}>PRODUCT</button>
-          <button onClick={() => navigate("/project")}>PROJECTS</button>
-          <button onClick={() => navigate("/gallery")}>GALLERY</button>
-          <button onClick={() => navigate("/blog")}>BLOG</button>
-          <button onClick={() => navigate("/contactus")}>CONTACT US</button>
+        <div className="hidden md:flex  text-blue-700 text-md  font-semibold space-x-8 =">
+          <button
+            onClick={() => navigate("/")}
+            className="hover:text-gray-500  cursor-pointer"
+          >
+            HOME
+          </button>
+          <button
+            onClick={() => navigate("/aboutus")}
+            className="hover:text-gray-500 cursor-pointer"
+          >
+            ABOUT
+          </button>
+          <button
+            onClick={() => navigate("/product")}
+            className="hover:text-gray-500 cursor-pointer"
+          >
+            PRODUCT
+          </button>
+          <button
+            onClick={() => navigate("/project")}
+            className="hover:text-gray-500"
+          >
+            PROJECTS
+          </button>
+          <button
+            onClick={() => navigate("/gallery")}
+            className="hover:text-gray-500 cursor-pointer"
+          >
+            GALLERY
+          </button>
+          <button
+            onClick={() => navigate("/blog")}
+            className="hover:text-gray-500 cursor-pointer"
+          >
+            BLOG
+          </button>
+          <button
+            onClick={() => navigate("/contactus")}
+            className="hover:text-gray-500  cursor-pointer"
+          >
+            CONTACT US
+          </button>
         </div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="bg-black text-white px-3 py-2 rounded-md"
+            className="bg-white text-blue-500 px-3 py-2 "
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -62,7 +97,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="bg-yellow-500 px-4 py-4 md:hidden space-y-4">
+        <div className="bg-[#f4f4f4] text-blue-700 text-md  font-semibold px-4 py-4 md:hidden space-y-4">
           <button
             onClick={() => {
               navigate("/");

@@ -5,9 +5,9 @@ import { saveAs } from "file-saver";
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
-      <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
+      <h1 className="text-4xl text-gray-800 sm:text-6xl lg:text-7xl text-center tracking-wide">
         SUVIAM INFRA
-        <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
+        <span className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent bg-clip-text">
           {" "}
           PRIVATE LIMITED
         </span>
@@ -23,7 +23,7 @@ const HeroSection = () => {
       <div className="flex justify-center my-10">
         <a
           href="#"
-          className="bg-gradient-to-r from-gray-300 via-gray-400 to-gray-500  py-3 px-4 mx-3 rounded-md"
+          className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500  py-3 px-4 mx-3 rounded-md"
         >
           {" "}
           DOWNLOAD PROFILE

@@ -13,7 +13,7 @@ import { FiPrinter } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#4A5565] text-white py-12 px-8">
+    <footer className="bg-[#4A5565] text-white py-12 w-full px-8">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* About Company */}
         <div>
@@ -72,24 +72,28 @@ const Footer = () => {
         </div>
 
         {/* Newsletter and Social Links */}
-        <div>
-          <h3 className="text-lg font-bold mb-4">NEWSLETTER</h3>
-          <div className="flex mb-6">
-            <input
-              type="email"
-              placeholder="ENTER YOUR EMAIL"
-              className="p-2 flex-1 bg-gray-800 text-white focus:outline-none"
-            />
-            <button className="bg-yellow-500 px-4 text-black">➤</button>
+        <div className="flex flex-col justify-center text-center">
+          <div>
+            <h3 className="text-lg font-bold mb-4">NEWSLETTER</h3>
+            {/* <div className="flex mb-6">
+              <input
+                type="email"
+                placeholder="ENTER YOUR EMAIL"
+                className="p-2  bg-gray-800 text-white focus:outline-none"
+              />
+              <button className="bg-yellow-500 px-4 text-black">➤</button>
+            </div> */}
           </div>
-          <h3 className="text-lg font-bold mb-4">SOCIAL LINKS</h3>
-          <div className="flex space-x-3 text-gray-400">
-            <FaFacebookF />
-            <FaTwitter />
-            <FaLinkedinIn />
-            <FaRss />
-            <FaYoutube />
-            <FaInstagram />
+          <div>
+            <h3 className="text-lg font-bold mb-4">SOCIAL LINKS</h3>
+            <div className="flex space-x-3 text-gray-400">
+              <FaFacebookF />
+              <FaTwitter />
+              <FaLinkedinIn />
+              <FaRss />
+              <FaYoutube />
+              <FaInstagram />
+            </div>
           </div>
         </div>
       </div>

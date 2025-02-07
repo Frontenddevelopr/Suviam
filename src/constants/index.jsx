@@ -71,37 +71,37 @@ export const features = [
     icon: <MdOutlineHighQuality />,
     text: "BEST QUALITY",
     description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
+      "Our RCC pipes undergo rigorous testing and inspection to ensure they meet or exceed industry standards, delivering exceptional durability and reliability.",
   },
   {
     icon: <CiTrophy />,
     text: "INTEGRITY",
     description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
+      "We prioritize customer satisfaction and maintain transparency in all our operations, making us a trusted partner for government and private projects alike.",
   },
   {
     icon: <FaRegThumbsUp />,
     text: "STRATEGY",
     description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
+      "Our growth strategy involves continuous innovation, expanding our market presence, and investing in automation to increase production capacity and reduce costs.",
   },
   {
     icon: <MdSafetyDivider />,
     text: "SAFETY",
     description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
+      "We adhere to stringent safety and quality control measures at our manufacturing facility, ensuring reliable and safe infrastructure solutions.",
   },
   {
     icon: <RiUserCommunityFill />,
     text: "COMMUNITY",
     description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
+      "Serving diverse clients, including government agencies and construction firms across North Maharashtra, we are committed to contributing to regional development.",
   },
   {
     icon: <MdOutlineSettingsSuggest />,
     text: "SUSTAINABILITY",
     description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
+      "Committed to eco-friendly practices, our manufacturing processes aim to minimize environmental impact while delivering long-lasting infrastructure solutions.",
   },
 ];
 

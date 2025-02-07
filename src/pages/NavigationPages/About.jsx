@@ -1,98 +1,69 @@
-import React from "react";
-import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { AboutUs } from "../../constants/About";
+import { FaRegBuilding } from "react-icons/fa";
+import { SiRenovate } from "react-icons/si";
+import { FaPersonDigging } from "react-icons/fa6";
+import { AiOutlinePicture } from "react-icons/ai";
 
 function About() {
   return (
-    <div className="relative m border-b border-neutral-800 min-h-[800px]">
-      {/* <div className="text-center">
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
-          About Us{" "}
-          <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text"></span>
-        </h2>
-      </div> */}
-
-      <div className="bg-gray-800 text-white py-10 px-4">
-        {/* Header Section */}
-        <section className="text-center max-w-5xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4 text-yellow-500">About Us</h1>
-          <p className="text-gray-300 text-lg">
-            SUVIAM INFRA PRIVATE LIMITED is a premier manufacturer of Reinforced
-            Cement Concrete (RCC) pipes, dedicated to providing high-quality
-            products for various infrastructure applica􀆟ons. With a vision to
-            enhance urban and rural development, we specialize in producing RCC
-            pipes that are designed for durability, strength, and reliability.
-          </p>
-        </section>
-
-        {/* Our Mission Section */}
-        <section className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-12">
-          {/* Image Block */}
-          <div
-            className="bg-cover bg-center h-64 md:h-full rounded-md"
-            style={{
-              backgroundImage: "url('https://via.placeholder.com/500')",
-            }}
-          ></div>
-          {/* Content Block */}
-          <div>
-            <h2 className="text-3xl font-bold text-yellow-500 mb-4">
-              Our Mission
-            </h2>
-            <p className="text-gray-100 text-lg mb-4">
-              "To deliver innovative construction solutions and manufacturing
-              excellence by leveraging cutting-edge technology, while
-              prioritizing customer satisfaction and sustainable practices."
-            </p>
-            <ul className="space-y-4">
-              {[
-                "Innovative Construction Solutions",
-                "High-Quality Manufacturing",
-                "Sustainability and Customer Satisfaction",
-                "Cutting-edge Technology",
-              ].map((point) => (
-                <li key={point} className="flex items-center">
-                  <IoMdCheckmarkCircleOutline
-                    size={24}
-                    className="text-yellow-500 mr-3"
-                  />
-                  <span>{point}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        {/* Team Section */}
-        <section className="mt-12 text-center">
-          <h2 className="text-3xl font-bold text-yellow-500 mb-4">
-            Our Expert Team
-          </h2>
-          <p className="text-gray-300 text-lg">
-            Meet the dedicated professionals who bring expertise and innovation
-            to every project we undertake.
-          </p>
-
-          {/* Example Team Cards */}
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
-            {[1, 2, 3].map((item) => (
-              <div
-                key={item}
-                className="bg-gray-800 p-6 rounded-md text-center"
-              >
-                <div
-                  className="w-24 h-24 bg-gray-700 mx-auto rounded-full mb-4"
-                  style={{
-                    backgroundImage: "url('https://via.placeholder.com/150')",
-                  }}
-                ></div>
-                <h3 className="text-xl font-semibold text-yellow-500">
-                  Team Member {item}
-                </h3>
-                <p className="text-sm text-gray-400">Role Title</p>
+    <div className="flex flex-col md:flex-row justify-center items-center gap-2">
+      <div className="flex-1 flex justify-center items-center p-10 mx-2 md:m-4">
+        <img src="	https://thewebmax.org/constrot/images/pic-c-1.png" alt="" />
+      </div>
+      <div className="flex-1 p-4 ">
+        <h1 className="text-center text-blue-700 font-bold uppercase">
+          About Us
+        </h1>
+        <div className="text-xs mt-2 p-2 text-gray-700">
+          {AboutUs?.companyInfo?.description_para1}
+        </div>
+        <div className="text-xs p-2 text-gray-700">
+          {AboutUs?.companyInfo?.description_para2}
+        </div>
+        <div className="flex flex-col md:flex-row gap-6 mt-2 p-4 justify-center items-center">
+          <div className="flex flex-col md:flex-col gap-6 justify-center items-center">
+            <div className="flex flex-col md:flex-row gap-6  rounded-lg px-4 py-2  shadow-xl justify-center items-center">
+              <div className="text-[#00afe9] text-lg md:text-2xl border border-[#00afe9] rounded-full flex justify-center items-center p-4 cursor-pointer transition-all duration-300 hover:shadow-[0_0_10px] hover:shadow-blue-500 hover:text-blue-500">
+                <FaRegBuilding />
               </div>
-            ))}
+              <div className="text-xs text-gray-700">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                odit, eveniet architecto sint fugiat eligendi numquam, eaque
+                nobis at.
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row gap-6  rounded-lg px-4 py-2  shadow-xl justify-center items-center">
+              <div className="text-[#00afe9] text-lg md:text-2xl border border-[#00afe9] rounded-full flex justify-center items-center p-4 cursor-pointer transition-all duration-300 hover:shadow-[0_0_10px] hover:shadow-blue-500 hover:text-blue-500">
+                <SiRenovate />
+              </div>
+              <div className="text-xs text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                odit, eveniet architecto sint fugiat eligendi numquam, eaque
+              </div>
+            </div>
           </div>
-        </section>
+          <div className="flex flex-col md:flex-col gap-6 justify-center items-center">
+            <div className="flex flex-col md:flex-row gap-6  rounded-lg px-4 py-2  shadow-xl justify-center items-center">
+              <div className="text-[#00afe9] text-lg md:text-2xl border border-[#00afe9] rounded-full flex justify-center items-center p-4 cursor-pointer transition-all duration-300 hover:shadow-[0_0_10px] hover:shadow-blue-500 hover:text-blue-500">
+                <FaPersonDigging />
+              </div>
+              <div className="text-xs text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                odit, eveniet architecto sint fugiat eligendi numquam, eaque
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row gap-6  rounded-lg px-4 py-2  shadow-xl justify-center items-center">
+              <div className="text-[#00afe9] text-lg md:text-2xl border border-[#00afe9] rounded-full flex justify-center items-center p-4 cursor-pointer transition-all duration-300 hover:shadow-[0_0_10px] hover:shadow-blue-500 hover:text-blue-500">
+                <AiOutlinePicture />
+              </div>
+              <div className="text-xs text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                odit, eveniet fugiat eligendi numquam, eaque
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

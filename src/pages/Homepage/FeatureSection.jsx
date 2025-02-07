@@ -2,28 +2,28 @@ import { features } from "../../constants";
 
 const FeatureSection = () => {
   return (
-    <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
+    <div className="relative mt-20  min-h-[800px]">
       <div className="text-center">
-        <span className="bg-neutral-900 text-orange-500 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">
-          Feature
-        </span>
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
+        <h2 className="text-3xl text-gray-800 sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
           Why Choose{" "}
-          <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent bg-clip-text">
             Us
           </span>
         </h2>
       </div>
-      <div className="flex flex-wrap mt-10 lg:mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-3    gap-2  mt-10 lg:mt-20  ">
         {features.map((feature, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3">
-            <div className="flex">
-              <div className="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-orange-700 justify-center items-center rounded-full">
+          <div
+            key={index}
+            className="w-full shadow-lg px-6 rounded-2xl py-6 m-2"
+          >
+            <div className="flex flex-col justify-center items-center">
+              <h5 className="mt-1 mb-2 text-xl">{feature.text}</h5>
+              <div className="text-[#00afe9] text-lg md:text-2xl border border-[#00afe9] rounded-full flex justify-center items-center p-4 cursor-pointer transition-all duration-300 hover:shadow-[0_0_10px] hover:shadow-blue-500 hover:text-blue-500">
                 {feature.icon}
               </div>
-              <div>
-                <h5 className="mt-1 mb-6 text-xl">{feature.text}</h5>
-                <p className="text-md p-2 mb-20 text-neutral-500">
+              <div className="flex flex-col justify-center items-center">
+                <p className="text-md p-2 text-neutral-500">
                   {feature.description}
                 </p>
               </div>
