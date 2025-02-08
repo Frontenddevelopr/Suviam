@@ -3,8 +3,13 @@ export const AboutUs = {
   description: "Learn more about our company.",
   companyInfo: {
     title: "About Us",
-    description_para1: `SUVIAM INFRA PRIVATE LIMITED is a premier manufacturer of Reinforced Cement Concrete (RCC) pipes, dedicated to providing high-quality products for various infrastructure applications. With a vision to enhance urban and rural development, we specialize in producing RCC pipes designed for durability, strength, and reliability.`,
-    description_para2: ` pipes, dedicated to providing high-quality products for various infrastructure applications. With a vision to enhance urban and rural development, we specialize in producing RCC pipes designed for durability, strength, and reliability.`,
+    description_para1: `SUVIAM INFRA PRIVATE LIMITED is a leading construc􀆟on company
+specializing in irriga􀆟on projects that enhance water management
+through canals and Dams. `,
+    description_para2: `Established in 2023, we have built a strong
+reputa􀆟on for delivering innova􀆟ve and sustainable solu􀆟ons tailored to
+meet the unique needs of our clients (Water Resource Department, Govt.
+Of Maharashtra).`,
   },
   productRange: {
     title: "Product Range:",

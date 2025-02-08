@@ -1,5 +1,6 @@
 import video1 from "../../assets/video1.mp4";
 import video2 from "../../assets/video2.mp4";
+import video3 from "../../assets/video3.mp4";
 import { saveAs } from "file-saver";
 
 const HeroSection = () => {
@@ -22,24 +23,21 @@ const HeroSection = () => {
       </p>
       <div className="flex justify-center my-10">
         <a
-          href="#"
-          className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500  py-3 px-4 mx-3 rounded-md"
+          href="src/assets/Suviam Infra Company Profile.pdf" // Path to your PDF file in the public folder
+          download="Profile.pdf" // Suggested download filename
+          className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 py-3 px-4 mx-3 rounded-md text-white font-semibold"
         >
-          {" "}
           DOWNLOAD PROFILE
         </a>
-        {/* <a href="#" className="py-3 px-4 mx-3 rounded-md border">
-          Documentation
-        </a> */}
       </div>
       <div className="flex mt-10 justify-center">
         <video
           autoPlay
           loop
           muted
-          className="rounded-lg w-1/1 border border-[#3674B5] shadow-sm shadow-orange-400 mx-2 my-4"
+          className="rounded-lg w-300 border border-[#3674B5] shadow-sm shadow-orange-400 mx-2 my-4"
         >
-          <source src={video1} type="video/mp4" />
+          <source src={video3} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* <video

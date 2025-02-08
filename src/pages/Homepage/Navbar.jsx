@@ -26,16 +26,25 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-[#fff]  text-blue-700 text-md  shadow-xl px-4 md:px-10 py-3 flex justify-between items-center">
+      <nav className="bg-[#fff]  text-blue-700 text-md  shadow-md px-4 md:px-10 py-3 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-4">
+          {/* Logo Icon */}
+
           <div className="bg-blue-900 p-2 rounded-full">
-            <i className="fas fa-hard-hat text-yellow-500 text-2xl">
-              &#128104;
-            </i>
+            <img
+              className="w-10 h-10 object-cover"
+              src="src/assets/logo3.png"
+              alt="Suviam Logo"
+            />
           </div>
-          <span className="font-bold text-xl"></span>
-          <span className="text-sm text-gray-700">SUVIAM</span>
+          {/* Logo Text */}
+          <div className="flex flex-col">
+            <span className="font-bold text-lg text-blue-900 leading-none">
+              SUVIAM
+            </span>
+            <span className="text-sm text-gray-500">Empowering Innovation</span>
+          </div>
         </div>
 
         {/* Navigation Links */}

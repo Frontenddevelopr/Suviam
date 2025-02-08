@@ -1,30 +1,84 @@
 import React from "react";
-import ImageCarousel from "../../components/Carousel/ImageCarousel";
+import { List, Card, Carousel, Grid } from "antd";
+
+const products = [
+  {
+    title: "Plain And Socket Type RCC Pipes",
+    // price: "$49.99",
+    description:
+      "Suitable for various cross drainage and sewerage applica􀆟ons.",
+    imageUrl: "src/assets/pipes/img6.png",
+  },
+  {
+    title: "Reinforced RCC Pipes Various Classes",
+    // price: "$89.99",
+    description: "Designed for high-pressure applica􀆟ons and heavy loads",
+    imageUrl: "src/assets/pipes/img6.png",
+  },
+  {
+    title: "Specialized Ar􀆟cles:",
+    // price: "$29.99",
+    description: `Custom-designed solu􀆟ons for unique project requirements that Includes
+Box Culverts, Ready to Install Manhole Chambers, U-Shape drains, etc.`,
+    imageUrl: "src/assets/pipes/img6.png",
+  },
+  {
+    title: "U-Shape drains",
+    // price: "$99.99",
+    description: "Top-tier product with premium features.",
+    imageUrl: "src/assets/pipes/img6.png",
+  },
+];
 
 const Product = () => {
-  return (
-    <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
-      {/* Header Section */}
-      <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-gray-800">
-          Cement Pipes - High Quality & Durable
-        </h1>
-        <p className="mt-4 text-lg text-gray-600">
-          Choose from a variety of sizes combinations for your construction
-          needs
-        </p>
-      </header>
-      <div className="flex gap-6 pl-25">
-        <div className="row pl-2 w-80 h-80">
-          <img src="/src/assets/pipe.png" alt="Pipes" className="w-80 h-80" />
-        </div>
-        <div className="row pl-2 bg-amber-300 w-80 h-80 gap-1">Pipes</div>
-        <div className="row pl-2 bg-amber-300 w-80 h-80">Pipes</div>
-      </div>
+  const { useBreakpoint } = Grid;
+  const screens = useBreakpoint();
 
-      <div className="flex gap-6 pl-25">
-        <h1>Product</h1>
-        <ImageCarousel />
+  return (
+    <div className="p-6">
+      <h1 className="text-4xl text-blue-600 font-bold text-center mb-6">
+        Product
+      </h1>
+      <h1 className="text-center text-gray-800 font-semibold">
+        We offer a comprehensive range of RCC pipes, including:
+      </h1>
+      <br />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Product List */}
+        <div>
+          <List
+            grid={{
+              gutter: 16,
+              column: screens.lg ? 2 : 1,
+            }}
+            dataSource={products}
+            renderItem={(item) => (
+              <List.Item>
+                <Card
+                  title={item.title}
+                  extra={<span className="text-blue-500">{item.price}</span>}
+                >
+                  <p>{item.description}</p>
+                </Card>
+              </List.Item>
+            )}
+          />
+        </div>
+
+        {/* Image Carousel */}
+        <div>
+          <Carousel autoplay>
+            {products.map((product, index) => (
+              <div key={index}>
+                <img
+                  src={product.imageUrl}
+                  alt={product.title}
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </div>
     </div>
   );
