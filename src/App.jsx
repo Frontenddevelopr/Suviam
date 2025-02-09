@@ -15,7 +15,7 @@ import Product from "./pages/NavigationPages/Product";
 import Contact from "./pages/NavigationPages/Contact";
 import Blog from "./pages/NavigationPages/Blog";
 import Project from "./pages/NavigationPages/Project";
-
+import Blog1 from "./components/Blog/Blog1";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -27,6 +27,7 @@ function App() {
         <Route path="gallery" element={<Gallery />} />
         <Route path="blog" element={<Blog />} />
         <Route path="contactus" element={<Contact />} />
+        <Route path="/blog1/:id" element={<Blog1 />} />
       </Route>
     )
   );

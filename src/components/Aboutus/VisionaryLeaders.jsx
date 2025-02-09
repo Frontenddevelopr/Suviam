@@ -44,26 +44,23 @@ const leadersData = [
 
 function VisionaryLeaders() {
   return (
-    <div className="">
-      <div className="bg-gray-100 py-16 px-8 ">
+    <div className="bg-gray-100 py-16 px-4 flex justify-center">
+      <div className="w-full max-w-7xl">
         <h1 className="text-4xl font-bold text-center text-blue-600 mb-12">
           Visionary Leaders
         </h1>
         <Row gutter={[24, 24]} justify="center">
           {leadersData.map((leader, index) => (
-            <Col xs={24} sm={24} md={12} lg={12} key={index}>
-              <Card hoverable className="rounded-xl shadow-md">
+            <Col xs={24} sm={12} md={8} lg={6} key={index}>
+              <Card hoverable className="rounded-xl shadow-md mx-auto max-w-sm">
                 <Row align="middle">
-                  {/* Left Image Section */}
                   <Col xs={8} className="flex justify-center">
                     <img
                       alt={leader.name}
                       src={leader.image}
-                      className="w-32 h-32 object-cover rounded-full"
+                      className="w-24 h-24 object-cover rounded-full"
                     />
                   </Col>
-
-                  {/* Right Information Section */}
                   <Col xs={16}>
                     <div className="ml-4">
                       <div className="flex items-center mb-2">
